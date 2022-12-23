@@ -22,8 +22,9 @@ PUT: If the user chooses put, then prompt the user for name and id. Send a put m
 GET: If the user chooses get, then prompt the user for id. Send a get message to server (only fill id field of the record), and wait for the response. If the response is SUCCESS, print name and id. Otherwise print "get failed" message.
 
 
-QUIT: Close the socket, cleanup, and terminate the program.
+QUIT: Close the socket, cleanup, and terminate the program. <br />
 
+Always puts new record at end of the database file. Never overwrites data. If multiple entries with same ID or duplicates, returns first one found. <br />
 
 Runing the program:<br />
 so compile using makefile<br />
