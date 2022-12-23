@@ -9,9 +9,9 @@ Multi-threaded server where the parent thread initializes the socket to listenin
 Handler Thread: <br />
 A handler thread must process each request from a dbclient and send an appropriate response back to the client.
 <br />
-PUT: This message contains the data record that needs to be stored in the database. On receiving this message, handler appends the record to the database file. (Do not store the entire message. Store only the client data record.) If the write is successful, it will send SUCCESS message to the client. Otherwise the handler sends FAIL message.
+<br />PUT: This message contains the data record that needs to be stored in the database. On receiving this message, handler appends the record to the database file. (Do not store the entire message. Store only the client data record.) If the write is successful, it will send SUCCESS message to the client. Otherwise the handler sends FAIL message.
 <br />
-GET: This request message will contain the id of the record that needs to be fetched. On receiving this message, handler searches the database to find a matching record (record with id field that matches the id in the get message). If a matching record is found, the handler sends SUCCESS message. The message should also contain the record. Otherwise the handler sends FAIL message.
+<br />GET: This request message will contain the id of the record that needs to be fetched. On receiving this message, handler searches the database to find a matching record (record with id field that matches the id in the get message). If a matching record is found, the handler sends SUCCESS message. The message should also contain the record. Otherwise the handler sends FAIL message.
 
 
 Database Client (dbclient): <br />
