@@ -1,5 +1,5 @@
 /*
-	By: Sadia Khan and Maddie Webb
+	By: Sadia Khan
 	Server side
 	
 */
